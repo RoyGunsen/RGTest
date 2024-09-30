@@ -1,4 +1,6 @@
+default_guided_failure_mode = "On"
 deployment_changes_template = "#{Octopus.Environment.MachinesInRole[_role_]}"
+force_package_download = true
 release_notes_template = "#{Octopus.Environment.MachinesInRole[_role_]}"
 
 connectivity_policy {
