@@ -3,6 +3,7 @@ release_notes_template = "#{Octopus.Environment.MachinesInRole[_role_]}"
 
 connectivity_policy {
     allow_deployments_to_no_targets = true
+    exclude_unhealthy_targets = true
     skip_machine_behavior = "SkipUnavailableMachines"
 }
 
